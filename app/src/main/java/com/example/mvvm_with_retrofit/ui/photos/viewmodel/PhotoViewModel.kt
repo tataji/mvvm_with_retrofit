@@ -15,7 +15,7 @@ class PhotoViewModel(val mediaRepository: MediaRepository) : ViewModel() {
     var photosMutableLiveData: MutableStateFlow<Resource> = MutableStateFlow(Resource.Empty)
 
 
-    open fun getPhotoInformation(){
+     fun getPhotoInformation(){
         viewModelScope.launch(Dispatchers.IO) {
             photosMutableLiveData.value = Resource.ShowLoader
             val response:Response<MutableList<PhotoResponse>>  =mediaRepository.getPhotoApi()

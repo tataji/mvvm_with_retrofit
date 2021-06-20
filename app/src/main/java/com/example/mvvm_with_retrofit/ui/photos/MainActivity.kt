@@ -9,17 +9,13 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mvvm_with_retrofit.databinding.ActivityMainBinding
 import com.example.mvvm_with_retrofit.ui.ViewModelproviderFactory
 import com.example.mvvm_with_retrofit.utils.Resource
 import kotlinx.coroutines.flow.collect
 
 class MainActivity : AppCompatActivity(), SelectedCallBack {
     private lateinit var activityMainBinding: ActivityMainBinding;
-
-    class ActivityMainBinding {
-
-    }
-
     private lateinit var photoViewModel: PhotoViewModel
     private lateinit var photoList: MutableList<PhotoResponse>
     private lateinit var recyclerViewAdapter: PhotoAdapter

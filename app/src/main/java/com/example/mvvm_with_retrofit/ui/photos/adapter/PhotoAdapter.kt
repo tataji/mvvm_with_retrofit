@@ -2,6 +2,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mvvm_with_retrofit.databinding.PhotoItemBinding
 import com.example.mvvm_with_retrofit.ui.photos.SelectedCallBack
 import com.example.mvvm_with_retrofit.ui.photos.model.PhotoResponse
 
